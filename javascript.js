@@ -24,7 +24,7 @@ var salty =  [
     "What roles do love and affection play in your life?"
 ]
 
-var savory [
+var savory = [
     "What Has Been Your Biggest Challenge In Life, And How Did You Overcome It?",
     "What is your most terrible memory?",
     "Would You Rather Be Crazy Rich, Or Deeply In Love?",
@@ -33,25 +33,25 @@ var savory [
     "What roles do love and affection play in your life?"
 ]
 
-var smoky [
+var smoky = [
     "What, if anything, is too serious to be joked about?",
     "Of all the people in your family, whose death would you find most disturbing? Why?",
     "Is love a choice? Why?",
     "Would you choose a wild, hot relationship or a calm and stable one?",
-    "If you were to die this evening with no opportunity to communicate with anyone, what would you most regret not having told someone? Why haven't you told them yet?",
+    "If you were to die right now, what would you most regret not having told someone? Why haven't you told them yet?",
     "If heaven is real and you died tomorrow, would you get in?"
 ]
 
-var spicy [
-    "If a crystal ball could tell you the truth about yourself, your life, the future or anything else, what would you want to know?",
-    "If you knew that in one year you would die suddenly, would you change anything about the way you are now living? Why?",
+var spicy = [
+    "If a crystal ball could tell you the truth about anything, what would you want to know?",
+    "If you knew that in one year you would die, would you change anything about the way you are now living? Why?",
     "What did your past relationship teach you?",
-    "Why do you think you’re still single?",
+    "Why do you think you're still single?",
     "If you were going to become a close friend with your partner, please share what would be important for him or her to know."
 ]
 
-var umami [
-    "Share a personal problem and ask your partner's advice on how he or she might handle it. Also, ask your partner to reflect back to you how you seem to be feeling about the problem you have chosen."
+var umami = [
+    "Share a personal problem and ask your partner's advice on how he or she might handle it."
 ]
 
 
@@ -109,20 +109,20 @@ function nextQuestion() {
         // document.getElementById('question').innerHTML = questions3[randomNumber];
         // used3.push(randomNumber);
         console.log(salty_used);
-    } if (timeElapsed < 30000 && used1.length !== savory.length) {
+    } else if (timeElapsed < 30000 && savory_used.length !== savory.length) {
         return inner_helper(savory, savory_used)
 
-    } if (timeElapsed < 35000 && used1.length !== smoky.length) {
+    } else if (timeElapsed < 35000 && smoky_used.length !== smoky.length) {
         return inner_helper(smoky, smoky_used)
 
-    } if (timeElapsed < 40000 && used1.length !== spicy.length) {
+    } else if (timeElapsed < 40000 && spicy_used.length !== spicy.length) {
         return inner_helper(spicy, spicy_used)
 
-    } if (timeElapsed < 45000 && used1.length !== umami.length) {
+    } else if (timeElapsed < 45000 && umami_used.length !== umami.length) {
         return inner_helper(umami, umami_used)
     
     } else {
-        document.getElementById('question').innerHTML = "lookatmyeyes";
+        document.getElementById('question').innerHTML = "Congrats, now stare into each other's eyes";
     }
     
 }
