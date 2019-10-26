@@ -82,33 +82,14 @@ function nextQuestion() {
 
     if (timeElapsed < 10000 && sweet_used.length !== sweet.length) {
         return inner_helper(sweet, sweet_used)
-        // randomNumber = Math.floor(Math.random() * (questions1.length))
-        // while (used1.includes(randomNumber)) {
-        //     randomNumber = Math.floor(Math.random() * (questions1.length))
-        // }
-        // document.getElementById('question').innerHTML = questions1[randomNumber];
-        // used1.push(randomNumber);
-        console.log(sweet_used);
+
 
     } else if (timeElapsed < 15000 && sour_used.length !== sour.length) {
         return inner_helper(sour, sour_used)
-        // randomNumber = Math.floor(Math.random() * (questions2.length))
-        // while (used2.includes(randomNumber)) {
-        //     randomNumber = Math.floor(Math.random() * (questions2.length))
-        // }
-        // document.getElementById('question').innerHTML = questions2[randomNumber];
-        // used2.push(randomNumber);
-        console.log(sour_used);
         
     } else if (timeElapsed < 25000 && salty_used.length !== salty.length) {
         return inner_helper(salty, salty_used)
-        // randomNumber = Math.floor(Math.random() * (questions3.length))
-        // while (used3.includes(randomNumber)) {
-        //     randomNumber = Math.floor(Math.random() * (questions3.length))
-        // }
-        // document.getElementById('question').innerHTML = questions3[randomNumber];
-        // used3.push(randomNumber);
-        console.log(salty_used);
+
     } else if (timeElapsed < 30000 && savory_used.length !== savory.length) {
         return inner_helper(savory, savory_used)
 
@@ -125,38 +106,5 @@ function nextQuestion() {
         document.getElementById('question').innerHTML = "Congrats, now stare into each other's eyes";
     }
     
-}
 document.addEventListener("keydown", nextQuestion, false);
-// function nextQuestion() {
-//     var timeElapsed = Date.now() - startTime;
-//     console.log(Date.now());
-//     console.log(timeElapsed);
-//     if (timeElapsed < 10000) {
 
-        
-//         document.getElementById('question').innerHTML = questions1[1];
-
-//     } else if (timeElapsed < 20000) {
-
-        
-//         document.getElementById('question').innerHTML = questions2[1];
-
-//     }
-    
-// }
-
-
-
-
-
-
-// var timeElapsed = Date.now() - startTime;
-
-
-// var randomNumber = Math.floor(Math.random() * (questions.length));
-// if timeElapsed < 5 min:
-//     if sweetUsed.includes(randomNumber):
-//         call new randomNumber
-//     else:
-//         document.getElementById('question').innerHTML = sweetQuestions[randomNumber];
-//         sweetUsed.push(randomNumber);

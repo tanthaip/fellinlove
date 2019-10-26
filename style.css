@@ -53,25 +53,6 @@
     transform: scale(1.1);
   }
 
+
 .next-btn:focus {outline:0;}
 
-
-
-
-/* .everything {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 45%;
-    }
-
-#questions {
-    display: flex;
-    text-align: center;
-}
-
-.button {
-    width: 100px;
-    margin: 0 auto;
-} */
