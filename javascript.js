@@ -126,7 +126,7 @@ function nextQuestion() {
     }
     
 }
-
+document.addEventListener("keydown", nextQuestion, false);
 // function nextQuestion() {
 //     var timeElapsed = Date.now() - startTime;
 //     console.log(Date.now());
