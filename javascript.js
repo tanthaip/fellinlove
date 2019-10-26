@@ -83,6 +83,7 @@ function nextQuestion() {
     if (timeElapsed < 10000 && sweet_used.length !== sweet.length) {
         return inner_helper(sweet, sweet_used)
 
+
     } else if (timeElapsed < 15000 && sour_used.length !== sour.length) {
         return inner_helper(sour, sour_used)
         
@@ -105,4 +106,5 @@ function nextQuestion() {
         document.getElementById('question').innerHTML = "Congrats, now stare into each other's eyes";
     }
     
-}
+document.addEventListener("keydown", nextQuestion, false);
+
