@@ -72,7 +72,6 @@ function inner_helper(questions_list, used_list) {
             document.getElementById('question').innerHTML = questions_list[randomNumber];
             FOS.classList.remove('pre-animation');
         }, 500)
-        
         used_list.push(randomNumber);
 
 }
