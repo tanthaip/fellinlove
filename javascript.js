@@ -25,9 +25,9 @@ var salty =  [
 ]
 
 var savory = [
-    "What Has Been Your Biggest Challenge In Life, And How Did You Overcome It?",
+    "What has been your biggest challenge in life, and how did you overcome it?",
     "What is your most terrible memory?",
-    "Would You Rather Be Crazy Rich, Or Deeply In Love?",
+    "Would You rather be crazy rich, or deeply in love?",
     "How do you feel about your relationship with your mother?",
     "What's one thing that you would change on yourself if you could?",
     "What roles do love and affection play in your life?"
