@@ -4,7 +4,6 @@ var sweet = [
     "What would a 'perfect' day look like for you?",
     "When was the last time you sang to yourself? To someone else?",
     "If you could wake up tomorrow having gained any one quality or ability, what would it be?",
-    ""
 ]
 
 var sour =  [
