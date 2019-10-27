@@ -6,7 +6,7 @@
 
 .landing {
     display:grid;
-    grid-template-columns: 150px auto 150px;
+    grid-template-columns: auto 680px auto;
     grid-template-rows: .75fr 1fr 1fr;
     height: 100vh;
     background-color: #ED7B84;
@@ -16,9 +16,9 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: white;
-    line-height: 4rem;
+    line-height: 4.2rem;
     animation: fadein 2s;
     -webkit-animation: fadein 2s;
 }
@@ -43,9 +43,9 @@
 .next-btn {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    width: 10rem;
+    width: 15rem;
     margin: 0 auto;
-    height: 3rem;
+    height: 4.5rem;
     border-radius: 10px;
     border: none;
     background-color: white;
@@ -54,6 +54,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-family: 'Montserrat';
+    font-size: 1.2rem;
 }
 
 .hvr-grow {
@@ -75,3 +76,49 @@
 
 .next-btn:focus {outline:0;}
 
+.fadeOnSwitch {
+    transition: all 1s;
+    max-height: 300px;
+}
+
+.fadeOnSwitch.pre-animation {
+    opacity: 0;
+    max-height: 0;;
+}
+
+@media only screen and (max-device-width : 768px) {
+    .landing {
+        grid-template-columns: auto 350px auto;
+        grid-template-rows: 15% 65% 35%;
+    }
+    #question {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+    .btn-focus {
+        width: 10rem;
+        margin: 0 auto;
+        height: 3rem;
+
+    }
+
+@media only screen and (max-device-width : 380px) {
+    .landing {
+        grid-template-columns: 40px auto 40px;
+        grid-template-rows: 70px auto auto 125px;
+    }
+    #question {
+        font-size: 3.5vh;
+        line-height: 2rem;
+    }        
+    .btn-focus {
+        width: 3rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+    .next-btn {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+
+    }
+}
