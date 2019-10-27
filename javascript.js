@@ -79,7 +79,7 @@ function inner_helper(questions_list, used_list) {
         setTimeout(function() {
             document.getElementById('question').innerHTML = questions_list[randomNumber];
             FOS.classList.remove('pre-animation');
-        }, 500)
+        }, 600)
         
         // document.getElementById('question').innerHTML = questions_list[randomNumber];
         used_list.push(randomNumber);
