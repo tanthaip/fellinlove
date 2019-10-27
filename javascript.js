@@ -105,7 +105,7 @@ function nextQuestion() {
         return inner_helper(umami, umami_used)
     
     } else {
-        document.getElementById('question').innerHTML = "Congrats, now stare into each other's eyes";
+        document.getElementById('question').innerHTML = "Congratulations! You and your partner have made it to the end. As a final exercise, look into your partner's eyes for 4 minutes in silence."
         button[0].parentNode.removeChild(button[0]);
     }
 }
