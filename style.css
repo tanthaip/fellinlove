@@ -75,3 +75,13 @@
 
 .next-btn:focus {outline:0;}
 
+.fadeOnSwitch {
+    transition: all 1s;
+    max-height: 300px;
+}
+
+.fadeOnSwitch.pre-animation {
+    opacity: 0;
+    max-height: 0;;
+}
+

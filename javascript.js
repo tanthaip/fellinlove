@@ -25,9 +25,9 @@ var salty =  [
 ]
 
 var savory = [
-    "What has been your biggest challenge in life, and how did you overcome it?",
+    "What Has Been Your Biggest Challenge In Life, And How Did You Overcome It?",
     "What is your most terrible memory?",
-    "Would You rather be crazy rich, or deeply in love?",
+    "Would You Rather Be Crazy Rich, Or Deeply In Love?",
     "How do you feel about your relationship with your mother?",
     "What's one thing that you would change on yourself if you could?",
     "What roles do love and affection play in your life?"
@@ -67,16 +67,30 @@ var startTime = Date.now();
 console.log(startTime);
 
 function inner_helper(questions_list, used_list) {
+
+    var FOS = document.querySelector('.fadeOnSwitch')
+
     randomNumber = Math.floor(Math.random() * (questions_list.length))
         while (used_list.includes(randomNumber)) {
             randomNumber = Math.floor(Math.random() * (questions_list.length))
         }
-        document.getElementById('question').innerHTML = questions_list[randomNumber];
+        FOS.classList.add('pre-animation')
+        
+        setTimeout(function() {
+            document.getElementById('question').innerHTML = questions_list[randomNumber];
+            FOS.classList.remove('pre-animation');
+        }, 500)
+        
+        // document.getElementById('question').innerHTML = questions_list[randomNumber];
         used_list.push(randomNumber);
 
 }
 
+
+
+
 function nextQuestion() {
+    button = document.getElementsByClassName("next-btn");
     var timeElapsed = Date.now() - startTime;
     console.log(timeElapsed)
 
@@ -103,6 +117,12 @@ function nextQuestion() {
     
     } else {
         document.getElementById('question').innerHTML = "Congrats, now stare into each other's eyes";
+        button[0].parentNode.removeChild(button[0]);
     }
 }
 document.addEventListener("keydown", nextQuestion, false);
+
+// var container = document.querySelector('fadeOnSwitch')
+// container.classList.add('pre-animation');
+// setTimeout(function() {
+//     container.classList.remove('pre-animation')},1000)
