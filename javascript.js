@@ -82,26 +82,28 @@ function nextQuestion() {
     button = document.getElementsByClassName("next-btn");
     var timeElapsed = Date.now() - startTime;
     console.log(timeElapsed)
+    
+    var minute = 60000;
 
-    if (timeElapsed < 600000 && sweet_used.length !== sweet.length) {
+    if (timeElapsed < (10*minute) && sweet_used.length !== sweet.length) {
         return inner_helper(sweet, sweet_used)
 
-    } else if (timeElapsed < 1200000 && sour_used.length !== sour.length) {
+    } else if (timeElapsed < (20*minute) && sour_used.length !== sour.length) {
         return inner_helper(sour, sour_used)
     
-    } else if (timeElapsed < 1800000 && storytime_used.length != storytime.length) {
+    } else if (timeElapsed < (30*minute) && storytime_used.length != storytime.length) {
         return inner_helper(storytime, storytime_used)
         
-    } else if (timeElapsed < 2400000 && salty_used.length !== salty.length) {
+    } else if (timeElapsed < (40*minute) && salty_used.length !== salty.length) {
         return inner_helper(salty, salty_used)
 
-    } else if (timeElapsed < 3000000 && smoky_used.length !== smoky.length) {
+    } else if (timeElapsed < (50*minute) && smoky_used.length !== smoky.length) {
         return inner_helper(smoky, smoky_used)
 
-    } else if (timeElapsed < 3600000 && spicy_used.length !== spicy.length) {
+    } else if (timeElapsed < (60*minute) && spicy_used.length !== spicy.length) {
         return inner_helper(spicy, spicy_used)
 
-    } else if (timeElapsed < 4200000 && umami_used.length !== umami.length) {
+    } else if (timeElapsed < (70*minute) && umami_used.length !== umami.length) {
         return inner_helper(umami, umami_used)
     
     } else {
